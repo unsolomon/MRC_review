@@ -144,9 +144,9 @@ TF-IDF는 문서 내 특정 단어의 **중요도(weight)** 를 수치로 표현
 * **Raw Count:** 등장 횟수
 * **Length-normalized:** 문서 길이로 정규화
 
-[
+$$
 \mathrm{TF}(t, d) = \frac{\text{단어 t의 등장 횟수}}{\text{문서 d의 전체 단어 수}}
-]
+$$
 
 > 다른 변형 방식: binary(존재 여부), log-scaling 등
 
@@ -159,9 +159,9 @@ TF-IDF는 문서 내 특정 단어의 **중요도(weight)** 를 수치로 표현
 * **N:** 전체 문서 수
 * **DF(t):** 단어 *t*가 등장한 문서 수
 
-[
+$$
 \mathrm{IDF}(t) = \log \left( \frac{N}{1 + \mathrm{DF}(t)} \right)
-]
+$$
 
 > “the”, “is”, “and”처럼 대부분 문서에 존재하는 단어는 IDF가 0에 가까움
 > 반면 “BTS”, “Heisenberg”처럼 희귀 단어는 높은 IDF 값을 가짐.
@@ -170,9 +170,9 @@ TF-IDF는 문서 내 특정 단어의 **중요도(weight)** 를 수치로 표현
 
 ### 💡 TF-IDF 결합
 
-[
+$$
 \mathrm{TF\text{-}IDF}(t, d) = \mathrm{TF}(t, d) \times \mathrm{IDF}(t)
-]
+$$
 
 | 단어    | TF | IDF | TF-IDF | 해석     |
 | ----- | -- | --- | ------ | ------ |
