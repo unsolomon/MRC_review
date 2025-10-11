@@ -27,7 +27,6 @@ MRC의 주요 개념과 실제 시스템 구현 흐름을 다루며 구성되어
 
 ## 🧱 **MRC 시스템 구성 흐름**
 
-```mermaid
 graph TD
     A[질문 입력 (Query)] --> B[Passage Retrieval]
     B --> C[Dense/Sparse Embedding]
