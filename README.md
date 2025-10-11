@@ -34,7 +34,7 @@ graph TD
     C --> D[Retriever 결과 Top-k Passage]
     D --> E[Reader (MRC 모델)]
     E --> F[Answer Extraction or Generation]
-```
+
 
 * **Retriever**: 관련 문서를 빠르게 찾아주는 검색 모듈
 * **Reader**: 검색된 문서에서 실제 답변을 예측하는 모델
