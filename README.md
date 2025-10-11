@@ -27,13 +27,13 @@ MRC의 주요 개념과 실제 시스템 구현 흐름을 다루며 구성되어
 
 ## 🧱 **MRC 시스템 구성 흐름**
 
-```
+```mermaid
 graph TD
-A[질문 입력 (Query)] --> B[Passage Retrieval]
-B --> C[Dense/Sparse Embedding]
-C --> D[Retriever 결과 Top-k Passage]
-D --> E[Reader (MRC 모델)]
-E --> F[Answer Extraction or Generation]
+    A[질문 입력 (Query)] --> B[Passage Retrieval]
+    B --> C[Dense/Sparse Embedding]
+    C --> D[Retriever 결과 Top-k Passage]
+    D --> E[Reader (MRC 모델)]
+    E --> F[Answer Extraction or Generation]
 ```
 
 * **Retriever**: 관련 문서를 빠르게 찾아주는 검색 모듈
